@@ -22,11 +22,27 @@ add_library(liblmdb STATIC
 set(CMAKE_INSTALL_PREFIX ${PROJECT_BINARY_DIR}/_install)
 
 # Install header files
+include(GNUInstallDirs)
+
+install(TARGETS liblmdb
+  EXPORT liblmdbtargets
+  RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+  LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+  ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+)
+
 install(FILES
     ${PROJECT_SOURCE_DIR}/lmdb.h
     ${PROJECT_SOURCE_DIR}/midl.h
-    DESTINATION include)
+    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
     
 install (
-    TARGETS liblmdb 
-    DESTINATION lib)
+    TARGETS liblmdb
+    EXPORT lmdb-export
+    DESTINATION ${CMAKE_INSTALL_LIBDIR})
+
+install(
+    EXPORT lmdb-export
+    FILE LMDBConfig.cmake
+    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/lmdb/
+    )
