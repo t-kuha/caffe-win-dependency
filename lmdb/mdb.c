@@ -4939,7 +4939,7 @@ mdb_env_open(MDB_env *env, const char *path, unsigned int flags, mdb_mode_t mode
 	if (rc)
 		goto leave;
 
-	env->me_path = strdup(path);
+	env->me_path = _strdup(path);
 	env->me_dbxs = calloc(env->me_maxdbs, sizeof(MDB_dbx));
 	env->me_dbflags = calloc(env->me_maxdbs, sizeof(uint16_t));
 	env->me_dbiseqs = calloc(env->me_maxdbs, sizeof(unsigned int));
@@ -9759,7 +9759,7 @@ int mdb_dbi_open(MDB_txn *txn, const char *name, unsigned int flags, MDB_dbi *db
 	}
 
 	/* Done here so we cannot fail after creating a new DB */
-	if ((namedup = strdup(name)) == NULL)
+	if ((namedup = _strdup(name)) == NULL)
 		return ENOMEM;
 
 	if (rc) {
