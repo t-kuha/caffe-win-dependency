@@ -1,3 +1,6 @@
 [submodule "snappy"]
 	path = snappy
 	url = ./snappy
+[submodule "leveldb"]
+	path = leveldb
+	url = ./leveldb
