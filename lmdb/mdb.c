@@ -4294,8 +4294,14 @@ mdb_env_open2(MDB_env *env)
 
 #ifdef _WIN32
 	/* See if we should use QueryLimited */
-	rc = GetVersion();
-	if ((rc & 0xff) > 5)
+	OSVERSIONINFOEX OSver;
+	ULONGLONG condition = 0;
+	OSver.dwOSVersionInfoSize = sizeof(OSVERSIONINFOEX);
+	OSver.dwMajorVersion = 6;
+	OSver.dwMinorVersion = 0;
+	VER_SET_CONDITION(condition, VER_MAJORVERSION, VER_GREATER_EQUAL);
+	
+	if(VerifyVersionInfo(&OSver, VER_MAJORVERSION, condition))
 		env->me_pidquery = MDB_PROCESS_QUERY_LIMITED_INFORMATION;
 	else
 		env->me_pidquery = PROCESS_QUERY_INFORMATION;
