@@ -1,15 +1,15 @@
 [submodule "snappy"]
 	path = snappy
-	url = ./snappy
+	url = https://github.com/google/snappy
 [submodule "leveldb"]
 	path = leveldb
 	url = ./leveldb
 [submodule "gflags"]
 	path = gflags
-	url = ./gflags
+	url = https://github.com/gflags/gflags
 [submodule "glog"]
 	path = glog
-	url = ./glog
+	url = https://github.com/google/glog
 [submodule "FFmpeg"]
 	path = FFmpeg
-	url = ./FFmpeg
+	url = https://github.com/FFmpeg/FFmpeg
