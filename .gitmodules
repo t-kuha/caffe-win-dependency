@@ -7,3 +7,6 @@
 [submodule "gflags"]
 	path = gflags
 	url = ./gflags
+[submodule "glog"]
+	path = glog
+	url = ./glog
