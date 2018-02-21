@@ -13,3 +13,6 @@
 [submodule "FFmpeg"]
 	path = FFmpeg
 	url = https://github.com/FFmpeg/FFmpeg
+[submodule "opencv"]
+	path = opencv
+	url = https://github.com/opencv/opencv.git
