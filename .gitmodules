@@ -4,3 +4,6 @@
 [submodule "leveldb"]
 	path = leveldb
 	url = ./leveldb
+[submodule "gflags"]
+	path = gflags
+	url = ./gflags
