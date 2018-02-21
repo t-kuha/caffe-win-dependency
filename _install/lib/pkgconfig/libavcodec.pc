@@ -1,0 +1,14 @@
+prefix=/D/Users/kuriharat/Documents/GitHub/caffe-win-dependency/_install
+exec_prefix=${prefix}
+libdir=/D/Users/kuriharat/Documents/GitHub/caffe-win-dependency/_install/lib
+includedir=/D/Users/kuriharat/Documents/GitHub/caffe-win-dependency/_install/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 57.107.100
+Requires: libswresample >= 2.9.100, libavutil >= 55.78.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec gdi32.lib psapi.lib ole32.lib strmiids.lib uuid.lib oleaut32.lib shlwapi.lib user32.lib ws2_32.lib vfw32.lib user32.lib secur32.lib psapi.lib advapi32.lib shell32.lib ole32.lib
+Libs.private: 
+Cflags: -I${includedir}

@@ -1,0 +1,14 @@
+prefix=/D/Users/kuriharat/Documents/GitHub/caffe-win-dependency/_install
+exec_prefix=${prefix}
+libdir=/D/Users/kuriharat/Documents/GitHub/caffe-win-dependency/_install/lib
+includedir=/D/Users/kuriharat/Documents/GitHub/caffe-win-dependency/_install/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.78.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: 
+Cflags: -I${includedir}
