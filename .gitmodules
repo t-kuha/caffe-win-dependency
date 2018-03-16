@@ -16,3 +16,6 @@
 [submodule "opencv"]
 	path = opencv
 	url = https://github.com/opencv/opencv.git
+[submodule "protobuf"]
+	path = protobuf
+	url = https://github.com/google/protobuf.git
