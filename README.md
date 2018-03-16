@@ -40,4 +40,5 @@
 #### protobuf
 - Based on v3.5.1
   - https://github.com/google/protobuf
+  - How to build: Use CMake
   - Without test (thus without gmock & gtest)
