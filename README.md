@@ -40,4 +40,4 @@
 #### protobuf
 - Based on v3.5.1
   - https://github.com/google/protobuf
-  
+  - Without test (thus without gmock & gtest)
