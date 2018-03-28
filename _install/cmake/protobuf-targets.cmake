@@ -49,26 +49,23 @@ if(_IMPORT_PREFIX STREQUAL "/")
 endif()
 
 # Create imported target protobuf::libprotobuf-lite
-add_library(protobuf::libprotobuf-lite SHARED IMPORTED)
+add_library(protobuf::libprotobuf-lite STATIC IMPORTED)
 
 set_target_properties(protobuf::libprotobuf-lite PROPERTIES
-  INTERFACE_COMPILE_DEFINITIONS "PROTOBUF_USE_DLLS"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
 )
 
 # Create imported target protobuf::libprotobuf
-add_library(protobuf::libprotobuf SHARED IMPORTED)
+add_library(protobuf::libprotobuf STATIC IMPORTED)
 
 set_target_properties(protobuf::libprotobuf PROPERTIES
-  INTERFACE_COMPILE_DEFINITIONS "PROTOBUF_USE_DLLS"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
 )
 
 # Create imported target protobuf::libprotoc
-add_library(protobuf::libprotoc SHARED IMPORTED)
+add_library(protobuf::libprotoc STATIC IMPORTED)
 
 set_target_properties(protobuf::libprotoc PROPERTIES
-  INTERFACE_COMPILE_DEFINITIONS "PROTOBUF_USE_DLLS"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
   INTERFACE_LINK_LIBRARIES "protobuf::libprotobuf"
 )

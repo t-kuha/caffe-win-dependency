@@ -45,8 +45,8 @@ macro(_check_and_save_build_option OPTION VALUE)
   set(${PACKAGE_FIND_NAME}_${OPTION} ${VALUE} PARENT_SCOPE)
 endmacro()
 _check_and_save_build_option(WITH_ZLIB OFF)
-_check_and_save_build_option(MSVC_STATIC_RUNTIME OFF)
-_check_and_save_build_option(BUILD_SHARED_LIBS ON)
+_check_and_save_build_option(MSVC_STATIC_RUNTIME ON)
+_check_and_save_build_option(BUILD_SHARED_LIBS OFF)
 
 # if the installed or the using project don't have CMAKE_SIZEOF_VOID_P set, ignore it:
 if(CMAKE_SIZEOF_VOID_P AND "8")
