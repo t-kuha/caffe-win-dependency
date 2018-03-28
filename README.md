@@ -42,3 +42,8 @@
   - https://github.com/google/protobuf
   - How to build: Use CMake
   - Without test (thus without gmock & gtest)
+  
+#### HDF5
+- HDF5-1.8.20
+  - https://www.hdfgroup.org/
+  - https://support.hdfgroup.org/ftp/HDF5/current18/src/hdf5-1.8.20.zip
