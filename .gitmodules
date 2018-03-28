@@ -19,3 +19,6 @@
 [submodule "protobuf"]
 	path = protobuf
 	url = https://github.com/google/protobuf.git
+[submodule "OpenBLAS"]
+	path = OpenBLAS
+	url = https://github.com/xianyi/OpenBLAS.git
