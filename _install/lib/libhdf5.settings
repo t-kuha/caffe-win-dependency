@@ -23,7 +23,7 @@ Compiling Options:
                        CPPFLAGS: 
                     H5_CPPFLAGS: 
                     AM_CPPFLAGS: 
-               Shared C Library: NO
+               Shared C Library: YES
                Static C Library: YES
   Statically Linked Executables: OFF
                         LDFLAGS: /machine:x64
@@ -42,7 +42,7 @@ Languages:
                   Fortran Flags: 
                H5 Fortran Flags: 
                AM Fortran Flags: 
-         Shared Fortran Library: NO
+         Shared Fortran Library: YES
          Static Fortran Library: YES
 
                             C++: ON
@@ -50,7 +50,7 @@ Languages:
                       C++ Flags: /DWIN32 /D_WINDOWS /W3 /GR /EHsc
                    H5 C++ Flags: 
                    AM C++ Flags: 
-             Shared C++ Library: NO
+             Shared C++ Library: YES
              Static C++ Library: YES
 
 Features:
