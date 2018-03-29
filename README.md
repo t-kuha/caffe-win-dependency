@@ -43,8 +43,23 @@
   - How to build: Use CMake
   - Without test (thus without gmock & gtest)
   
+
 #### HDF5
 - HDF5-1.8.20
   - https://www.hdfgroup.org/
   - https://support.hdfgroup.org/ftp/HDF5/current18/src/hdf5-1.8.20.zip
   - For Caffe (1.0) only
+
+
+#### Boost
+- 1.65.1
+  - https://github.com/boostorg
+  - https://github.com/boostorg/boost
+
+  ```MSDOS
+  .\bootstrap.bat
+  .\b2 install -j8 --prefix=<Destination>--with-filesystem
+  .\b2 install -j8 --prefix=<Destination>--with-system
+  .\b2 install -j8 --prefix=<Destination>--with-thread
+  .\b2 install -j8 --prefix=<Destination>--with-python
+  ```
