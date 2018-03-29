@@ -22,3 +22,6 @@
 [submodule "OpenBLAS"]
 	path = OpenBLAS
 	url = https://github.com/xianyi/OpenBLAS.git
+[submodule "boost"]
+	path = boost
+	url = https://github.com/boostorg/boost.git
