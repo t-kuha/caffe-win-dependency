@@ -1,5 +1,8 @@
 # caffe-win-dependency
 
+__Under Development__
+
+***
 #### LMDB
 - Based onf ver. 0.9.21
   - https://github.com/LMDB/lmdb
@@ -25,6 +28,14 @@
   - https://github.com/FFmpeg/FFmpeg
 
 - Reference: https://qiita.com/omochimetaru/items/35df0524594255354885
+
+```bash
+# In msys
+mkdir _build
+cd _build
+../configure --toolchain=msvc --prefix=<Destination> --enable-static --disable-programs
+make install
+```
 
 
 #### glog
