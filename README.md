@@ -42,11 +42,18 @@ make install
 - Based on ver 0.3.5
   - https://github.com/google/glog
 
+  - Build gflag first
+  - Use CMake
+  - Open the generated project in Visual Studio GUI
+  - Change "Runtime Library" from "/MD" to "/MT" 
 
 #### gflags
 - Based on ver 2.2.1
   - https://github.com/gflags/gflags
 
+  - Use CMake
+  - Open the generated project in Visual Studio GUI
+  - Change "Runtime Library" from "/MD" to "/MT" 
 
 #### protobuf
 - Based on v3.5.1
@@ -69,8 +76,8 @@ make install
 
   ```MSDOS
   .\bootstrap.bat
-  .\b2 install -j8 --prefix=<Destination>--with-filesystem
-  .\b2 install -j8 --prefix=<Destination>--with-system
-  .\b2 install -j8 --prefix=<Destination>--with-thread
-  .\b2 install -j8 --prefix=<Destination>--with-python
+  .\b2 install -j8 --prefix=<Destination> --with-filesystem
+  .\b2 install -j8 --prefix=<Destination> --with-system
+  .\b2 install -j8 --prefix=<Destination> --with-thread
+  .\b2 install -j8 --prefix=<Destination> --with-python
   ```
