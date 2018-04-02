@@ -76,8 +76,8 @@ make install
 
   ```MSDOS
   .\bootstrap.bat
-  .\b2 install -j8 --prefix=<Destination> --with-filesystem
-  .\b2 install -j8 --prefix=<Destination> --with-system
-  .\b2 install -j8 --prefix=<Destination> --with-thread
-  .\b2 install -j8 --prefix=<Destination> --with-python
+  .\b2 install -j8 --prefix=<Destination> toolset=msvc address-model=64 runtime-link=static link=static variant=release --with-filesystem
+  .\b2 install -j8 --prefix=<Destination> toolset=msvc address-model=64 runtime-link=static link=static variant=release --with-system
+  .\b2 install -j8 --prefix=<Destination> toolset=msvc address-model=64 runtime-link=static link=static variant=release --with-thread
+  .\b2 install -j8 --prefix=<Destination> toolset=msvc address-model=64 runtime-link=static link=static variant=release --with-python
   ```
