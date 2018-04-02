@@ -43,7 +43,7 @@ make install
   - https://github.com/google/glog
 
   - Build gflag first
-  - Use CMake
+  - Use CMake (With "-Dgflags_DIR=_install/lib/gflags/cmake")
   - Open the generated project in Visual Studio GUI
   - Change "Runtime Library" from "/MD" to "/MT" 
 
