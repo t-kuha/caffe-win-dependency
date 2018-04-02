@@ -4,7 +4,7 @@
 General Information:
 -------------------
                    HDF5 Version: 1.8.20
-                  Configured on: 2018-03-28
+                  Configured on: 2018-04-02
                   Configured by: Visual Studio 15 2017 Win64
                  Configure mode: CMAKE 3.10.2
                     Host system: Windows-10.0.14393
@@ -23,7 +23,7 @@ Compiling Options:
                        CPPFLAGS: 
                     H5_CPPFLAGS: 
                     AM_CPPFLAGS: 
-               Shared C Library: YES
+               Shared C Library: NO
                Static C Library: YES
   Statically Linked Executables: OFF
                         LDFLAGS: /machine:x64
@@ -42,7 +42,7 @@ Languages:
                   Fortran Flags: 
                H5 Fortran Flags: 
                AM Fortran Flags: 
-         Shared Fortran Library: YES
+         Shared Fortran Library: NO
          Static Fortran Library: YES
 
                             C++: ON
@@ -50,7 +50,7 @@ Languages:
                       C++ Flags: /DWIN32 /D_WINDOWS /W3 /GR /EHsc
                    H5 C++ Flags: 
                    AM C++ Flags: 
-             Shared C++ Library: YES
+             Shared C++ Library: NO
              Static C++ Library: YES
 
 Features:

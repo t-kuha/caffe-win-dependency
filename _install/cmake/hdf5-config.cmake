@@ -64,9 +64,9 @@ set (${HDF5_PACKAGE_NAME}_BUILD_HL_LIB    ON)
 set (${HDF5_PACKAGE_NAME}_ENABLE_Z_LIB_SUPPORT OFF)
 set (${HDF5_PACKAGE_NAME}_ENABLE_SZIP_SUPPORT  OFF)
 set (${HDF5_PACKAGE_NAME}_ENABLE_SZIP_ENCODING )
-set (${HDF5_PACKAGE_NAME}_BUILD_SHARED_LIBS    ON)
+set (${HDF5_PACKAGE_NAME}_BUILD_SHARED_LIBS    OFF)
 set (${HDF5_PACKAGE_NAME}_PACKAGE_EXTLIBS      OFF)
-set (${HDF5_PACKAGE_NAME}_EXPORT_LIBRARIES hdf5-static;hdf5-shared;hdf5_hl-static;hdf5_hl-shared;hdf5_cpp-static;hdf5_cpp-shared;hdf5_hl_cpp-static;hdf5_hl_cpp-shared)
+set (${HDF5_PACKAGE_NAME}_EXPORT_LIBRARIES hdf5-static;hdf5_hl-static;hdf5_cpp-static;hdf5_hl_cpp-static)
 set (${HDF5_PACKAGE_NAME}_TOOLSET "")
 
 #-----------------------------------------------------------------------------
