@@ -1,6 +1,11 @@
 # caffe-win-dependency
 
-__Under Development__
+
+***Note: This repo is under development***
+
+
+***Note: For how to build Caffe for Windows, please refer to the Wiki (https://github.com/t-kuha/caffe-win-dependency/wiki)***
+
 
 ***
 #### LMDB
