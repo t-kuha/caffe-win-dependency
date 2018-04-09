@@ -17,6 +17,7 @@
 #### Snappy
 - Based on ver. 1.1.7
   - https://github.com/google/snappy
+- Required for LevelDB
 - How to build: Use CMake
 
 
@@ -24,7 +25,7 @@
 - Based on Bureau 14 LevelDB branch (915d663292b2b288cb27ed9cb82818bb75fc37b4)
   - https://github.com/bureau14/leveldb
 
-  - https://github.com/google/leveldb
+- Note: current original code in Google's repo (https://github.com/google/leveldb) doesn't compile for Windows.
 
 
 #### ffmpeg
@@ -52,6 +53,7 @@ make install
   - Open the generated project in Visual Studio GUI
   - Change "Runtime Library" from "/MD" to "/MT" 
 
+
 #### gflags
 - Based on ver 2.2.1
   - https://github.com/gflags/gflags
@@ -59,6 +61,7 @@ make install
   - Use CMake
   - Open the generated project in Visual Studio GUI
   - Change "Runtime Library" from "/MD" to "/MT" 
+
 
 #### protobuf
 - Based on v3.5.1
