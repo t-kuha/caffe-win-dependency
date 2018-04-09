@@ -22,3 +22,6 @@
 [submodule "boost"]
 	path = boost
 	url = https://github.com/boostorg/boost.git
+[submodule "leveldb"]
+	path = leveldb
+	url = https://github.com/bureau14/leveldb.git
