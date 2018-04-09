@@ -1,9 +1,6 @@
 [submodule "snappy"]
 	path = snappy
 	url = https://github.com/google/snappy
-[submodule "leveldb"]
-	path = leveldb
-	url = ./leveldb
 [submodule "gflags"]
 	path = gflags
 	url = https://github.com/gflags/gflags
