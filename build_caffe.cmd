@@ -7,7 +7,7 @@
 set CMAKE_GENERATOR=Visual Studio 15 2017 Win64
 set DEPEND_DIR=%1
 set HDF5_ROOT=%DEPEND_DIR%
-REM caffe-win-dependency/_install
+
 
 :: Configuration
 cmake ../caffe ^
@@ -19,14 +19,15 @@ cmake ../caffe ^
     -DCPU_ONLY=ON ^
     -DCUDA_ARCH_NAME:STRING=Pascal ^
     -DBLAS=Open ^
-    -DBUILD_python=OFF ^
-    -DBUILD_python_layer=OFF ^
+    -DBUILD_python=ON ^
+    -DBUILD_python_layer=ON ^
+    -Dpython_version=3 ^
     -DBUILD_matlab=OFF ^
     -DCOPY_PREREQUISITES=OFF ^
     -DINSTALL_PREREQUISITES=OFF ^
     -DUSE_NCCL=OFF ^
     -DUSE_LMDB=ON ^
-    -DUSE_LEVELDB=OFF ^
+    -DUSE_LEVELDB=ON ^
     -DUSE_OPENCV=ON ^
     -DUSE_OPENMP=OFF ^
     -DGFlags_DIR=%DEPEND_DIR%/lib/cmake/gflags ^
@@ -41,7 +42,11 @@ cmake ../caffe ^
     -DHDF5_USE_STATIC_LIBRARIES=ON ^
     -DOpenBLAS_INCLUDE_DIR=%DEPEND_DIR%/include ^
     -DOpenBLAS_LIB=%DEPEND_DIR%/lib/libopenblas.lib ^
-    -DBOOST_ROOT=%DEPEND_DIR%
+    -DLEVELDB_ROOT=%DEPEND_DIR% ^
+    -DSNAPPY_ROOT_DIR=%DEPEND_DIR% ^
+    -DBOOST_ROOT=%DEPEND_DIR% ^
+    -DBoost_USE_STATIC_LIBS=ON ^
+    -DBoost_USE_STATIC_RUNTIME=ON
 
 :: Build
 cmake --build . --config Release --target install
