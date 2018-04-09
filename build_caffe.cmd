@@ -27,7 +27,8 @@ cmake ../caffe ^
     -DUSE_NCCL=OFF ^
     -DUSE_LMDB=ON ^
     -DUSE_LEVELDB=OFF ^
-    -DUSE_OPENCV=OFF ^
+    -DUSE_OPENCV=ON ^
+    -DUSE_OPENMP=OFF ^
     -DGFlags_DIR=%DEPEND_DIR%/lib/cmake/gflags ^
     -DGFLAGS_INCLUDE_DIR=%DEPEND_DIR%/include ^
     -DGLOG_DIR=%DEPEND_DIR%/lib/cmake/glog ^
@@ -35,7 +36,9 @@ cmake ../caffe ^
     -DGLOG_LIBRARY=%DEPEND_DIR%/lib/glog.lib ^
     -DProtobuf_DIR=%DEPEND_DIR%/cmake ^
     -DLMDB_DIR=%DEPEND_DIR% ^
+    -DOpenCV_DIR=%DEPEND_DIR% ^
     -DHDF5_DIR=%DEPEND_DIR%/cmake ^
+    -DHDF5_USE_STATIC_LIBRARIES=ON ^
     -DOpenBLAS_INCLUDE_DIR=%DEPEND_DIR%/include ^
     -DOpenBLAS_LIB=%DEPEND_DIR%/lib/libopenblas.lib ^
     -DBOOST_ROOT=%DEPEND_DIR%
