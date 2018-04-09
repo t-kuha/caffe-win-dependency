@@ -18,9 +18,6 @@ add_library(liblmdb STATIC
     midl.c
 )
 
-# Destination
-set(CMAKE_INSTALL_PREFIX ${PROJECT_BINARY_DIR}/_install)
-
 # Install header files
 include(GNUInstallDirs)
 
