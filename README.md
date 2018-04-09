@@ -87,3 +87,8 @@ make install
 - 3.4.0
   - https://opencv.org/
   - https://github.com/opencv/opencv.git
+
+
+#### OpenBLAS
+- 0.2.20
+  - https://github.com/xianyi/OpenBLAS.git
