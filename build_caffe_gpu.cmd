@@ -17,7 +17,7 @@ cmake ../caffe ^
     -DBUILD_SHARED_LIBS=OFF ^
     -DBUILD_STATIC_CRT_LIBS=ON ^
     -DCPU_ONLY=OFF ^
-    -DCUDA_ARCH_NAME:STRING=Pascal ^
+    -DCUDA_ARCH_NAME=Pascal ^
     -DBLAS=Open ^
     -DBUILD_python=ON ^
     -DBUILD_python_layer=ON ^
