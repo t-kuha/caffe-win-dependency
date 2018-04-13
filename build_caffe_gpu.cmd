@@ -30,11 +30,9 @@ cmake ../caffe ^
     -DUSE_LEVELDB=ON ^
     -DUSE_OPENCV=ON ^
     -DUSE_OPENMP=OFF ^
-    -DGFlags_DIR=%DEPEND_DIR%/lib/cmake/gflags ^
-    -DGFLAGS_INCLUDE_DIR=%DEPEND_DIR%/include ^
-    -DGLOG_DIR=%DEPEND_DIR%/lib/cmake/glog ^
-    -DGLOG_INCLUDE_DIR=%DEPEND_DIR%/include ^
-    -DGLOG_LIBRARY=%DEPEND_DIR%/lib/glog.lib ^
+    -Dgflags_DIR=%DEPEND_DIR%/lib/cmake/gflags ^
+    -DGFLAGS_ROOT_DIR=%DEPEND_DIR% ^
+    -DGLOG_ROOT_DIR=%DEPEND_DIR% ^
     -DProtobuf_DIR=%DEPEND_DIR%/cmake ^
     -DLMDB_DIR=%DEPEND_DIR% ^
     -DOpenCV_DIR=%DEPEND_DIR% ^
