@@ -4,7 +4,7 @@
 @echo off
 
 :: Setting
-set CMAKE_GENERATOR=Visual Studio 14 2015 Win64
+set CMAKE_GENERATOR=Visual Studio 15 2017 Win64
 set DEPEND_DIR=%1
 set HDF5_ROOT=%DEPEND_DIR%
 
@@ -12,6 +12,7 @@ set HDF5_ROOT=%DEPEND_DIR%
 :: Configuration
 cmake ../caffe ^
     -G"%CMAKE_GENERATOR%" ^
+    -DCUDA_HOST_COMPILER="C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.11.25503/bin/Hostx64/x64" ^
     -DCMAKE_INSTALL_PREFIX=_install ^
     -DCMAKE_BUILD_TYPE=Release ^
     -DBUILD_SHARED_LIBS=OFF ^
