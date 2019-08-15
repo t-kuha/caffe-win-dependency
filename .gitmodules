@@ -22,9 +22,9 @@
 [submodule "boost"]
 	path = boost
 	url = https://github.com/boostorg/boost.git
-[submodule "leveldb"]
-	path = leveldb
-	url = https://github.com/bureau14/leveldb.git
 [submodule "rocksdb"]
 	path = rocksdb
 	url = https://github.com/facebook/rocksdb.git
+[submodule "leveldb"]
+	path = leveldb
+	url = https://github.com/google/leveldb.git
