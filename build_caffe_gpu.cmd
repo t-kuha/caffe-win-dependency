@@ -1,5 +1,7 @@
 :: Usage
 :: >..\caffe-win-dependency\build_caffe.cmd <Root directory in full path>/caffe-win-dependency/_install
+:: Use forward slash for the 1st argument
+::
 
 @echo off
 
@@ -11,10 +13,10 @@ set HDF5_ROOT=%DEPEND_DIR%
 
 :: Configuration
 cmake ../caffe ^
-    -G"%CMAKE_GENERATOR%" ^
-    -DCUDA_HOST_COMPILER="C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.11.25503/bin/Hostx64/x64" ^
+    -G"%CMAKE_GENERATOR%" -Thost=x64 ^
     -DCMAKE_INSTALL_PREFIX=_install ^
     -DCMAKE_BUILD_TYPE=Release ^
+	-DCMAKE_PREFIX_PATH=%DEPEND_DIR% ^
     -DBUILD_SHARED_LIBS=OFF ^
     -DBUILD_STATIC_CRT_LIBS=ON ^
     -DCPU_ONLY=OFF ^
@@ -22,7 +24,7 @@ cmake ../caffe ^
     -DBLAS=Open ^
     -DBUILD_python=ON ^
     -DBUILD_python_layer=ON ^
-    -Dpython_version=3 ^
+    -Dpython_version=37 ^
     -DBUILD_matlab=OFF ^
     -DCOPY_PREREQUISITES=OFF ^
     -DINSTALL_PREREQUISITES=OFF ^
@@ -31,19 +33,10 @@ cmake ../caffe ^
     -DUSE_LEVELDB=ON ^
     -DUSE_OPENCV=ON ^
     -DUSE_OPENMP=OFF ^
-    -Dgflags_DIR=%DEPEND_DIR%/lib/cmake/gflags ^
-    -DGFLAGS_ROOT_DIR=%DEPEND_DIR% ^
-    -DGLOG_ROOT_DIR=%DEPEND_DIR% ^
-    -DProtobuf_DIR=%DEPEND_DIR%/cmake ^
-    -DLMDB_DIR=%DEPEND_DIR% ^
-    -DOpenCV_DIR=%DEPEND_DIR% ^
     -DHDF5_DIR=%DEPEND_DIR%/cmake ^
     -DHDF5_USE_STATIC_LIBRARIES=ON ^
     -DOpenBLAS_INCLUDE_DIR=%DEPEND_DIR%/include ^
     -DOpenBLAS_LIB=%DEPEND_DIR%/lib/libopenblas.lib ^
-    -DLEVELDB_ROOT=%DEPEND_DIR% ^
-    -DSNAPPY_ROOT_DIR=%DEPEND_DIR% ^
-    -DBOOST_ROOT=%DEPEND_DIR% ^
     -DBoost_USE_STATIC_LIBS=ON ^
     -DBoost_USE_STATIC_RUNTIME=ON
 
