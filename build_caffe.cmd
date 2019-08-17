@@ -23,7 +23,7 @@ cmake ../caffe ^
     -DBLAS=Open ^
     -DBUILD_python=ON ^
     -DBUILD_python_layer=ON ^
-    -Dpython_version=37 ^
+    -Dpython_version=3 ^
     -DBUILD_matlab=OFF ^
     -DCOPY_PREREQUISITES=OFF ^
     -DINSTALL_PREREQUISITES=OFF ^
