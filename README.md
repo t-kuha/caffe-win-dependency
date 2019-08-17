@@ -75,9 +75,11 @@ make install
 
 ## Boost
 
-- 1.68.0
+- 1.65.1
   - [https://www.boost.org/](https://www.boost.org/)
   - [https://github.com/boostorg/boost](https://github.com/boostorg/boost)
+
+- Note: boost 1.66.0 or higher will cause error when building caffe
 
 ## OpenCV
 
